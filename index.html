@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test page</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__enter-mob header__enter">Войти</div>
+    <img class="header__logo" src="./img/logo.svg" alt="logo">
+    <button class="header__menu menu">
+      <span class="help-caption">Помощь</span>
+    </button>
+    <ul class="menu__menu-nav menu-nav">
+      <a class="menu-nav__link" href="#">
+        <li class="menu-nav__item">Как это работает</li>
+      </a>
+      <a class="menu-nav__link" href="#">
+        <li class="menu-nav__item">Вопрос-ответ</li>
+      </a>
+      <a class="menu-nav__link" href="#">
+        <li class="menu-nav__item">Служба поддержки</li>
+      </a>
+      <a class="menu-nav__link" href="#">
+        <li class="menu-nav__item header__enter-mob">Войти</li>
+      </a>
+    </ul>
+  </header>
+
+  <main class="main">
+    <div class="main__search search">
+      <h2 class="search__caption">
+        Поиск начислений
+      </h2>
+      <form class="search__form">
+        <input class="search__input" type="search" id="search" name="search" placeholder="Введите данные для поиска">
+        <button class="search__find" type="submit">Найти</button>
+      </form>
+      <p class="search__note">Чем больше параметров введено, тем полнее результаты поиска</p>
+    </div>
+
+    <article class="payment">
+      <h2 class="article__caption article__caption-mob">
+        Узнайте, как оплатить
+      </h2>
+      <h2 class="article__caption article__caption-des">
+        Здесь можно оплатить</span>
+      </h2>
+      <nav>
+        <ul class="payment__nav payment-nav">
+          <a class="payment-nav__link" href="#gibdd-link">
+            <li class="payment-nav__item ">Штрафы и пошлины ГИБДД</li>
+          </a>
+          <a class="payment-nav__link" href="#trial-link">
+            <li class="payment-nav__item">Судебные задолженности</li>
+          </a>
+          <a class="payment-nav__link" href="#">
+            <li class="payment-nav__item">Налоги</li>
+          </a>
+          <a class="payment-nav__link" href="#">
+            <li class="payment-nav__item">Услуги Росреестра</li>
+          </a>
+          <li class="payment-nav__item">и другие услуги</li>
+        </ul>
+      </nav>
+      <section class="payment__payment-section payment-section">
+        <div class="name payment-section__name">
+          <img class="name__img" src="./img/gibdd.svg" alt="gibdd">
+          <span class="name__caption">Штрафы ГИБДД</span>
+          <span class="name__open">▼</span>
+        </div>
+        <div class="content payment-section__content " id="gibdd-link">
+
+          <div class="content__text-container">
+            <h3 class="content__caption">Штрафы ГИБДД</h3>
+            <p class="content__text">Для поиска укажите номера водительско го удостоверения и свидетельства
+              о регистрации
+              ТС или номер штрафа. </p>
+            <p class="content__text"> Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты
+              самостоятельно.</p>
+            <p class="content__highlighting">Платить Вовремя — дешевле!</p>
+            <p class="content__text">В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%.
+              Для
+              своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+          </div>
+          <img class="content__img" src="./img/gibdd.png" alt="dibdd">
+        </div>
+      </section>
+      <section class="payment__payment-section payment-section">
+        <div class="name payment-section__name">
+          <img class="name__img" src="./img/car.svg" alt="gibdd">
+          <span class="name__caption">Пошлины ГИБДД</span>
+          <span class="name__open">▼</span>
+        </div>
+        <div class="content payment-section__content ">
+          <h3 class="content__caption content__caption-mob">Пошлины ГИБДД</h3>
+          <p class="content__text">Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам
+            услугу. </p>
+        </div>
+      </section>
+      <section class="payment__payment-section payment-section">
+        <div class="name payment-section__name">
+          <img class="name__img" src="./img/trial.svg" alt="gibdd">
+          <span class="name__caption">Судебные задолженности</span>
+          <span class="name__open">▼</span>
+        </div>
+        <div class="content payment-section__content" id="trial-link">
+          <img class="content__img content__img-mob" src="./img/trial.png" alt="trial">
+          <div class="content__text-container">
+            <h3 class="content__caption content__caption-mob">Судебные задолженности</h3>
+            <p class="content__text">Для поиска начислений в ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС или номер
+              Исполнительного производства </p>
+            <p class="content__text">Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+            <p class="content__highlighting">Удобно!</p>
+            <p class="content__text">Судебные задолженности можно погасить как сразу, так и по частям, комфортными для
+              вас
+              платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+          </div>
+        </div>
+      </section>
+      <section class="payment__payment-section payment-section">
+        <div class="name payment-section__name">
+          <img class="name__img" src="./img/taxes.svg" alt="gibdd">
+          <span class="name__caption">Налоги</span>
+          <span class="name__open">▼</span>
+        </div>
+        <div class="content payment-section__content " id="taxes-link">
+          <div class="content__text-container">
+            <h3 class="content__caption content__caption-mob">Налоги</h3>
+            <p class="content__text">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового
+              документа, усли у вас на руках есть квитанция. </p>
+            <p class="content__highlighting">Важно!</p>
+            <p class="content__text">Согласно законодательству РФ вы не можете оплачивать налоги за других физических
+              лиц.
+              Принимаются только платежи физических лиц.</p>
+          </div>
+          <img class="content__img content__img-mob" src="./img/taxes.png" alt="taxes">
+        </div>
+      </section>
+      <section class="payment__payment-section payment-section">
+        <div class="name payment-section__name">
+          <img class="name__img" src="./img/rosrestr.svg" alt="gibdd">
+          <span class="name__caption">Услуги Росреестра</span>
+          <span class="name__open">▼</span>
+        </div>
+        <div class="content payment-section__content " id="rosrestr-link">
+          <img class="content__img content__img-mob" src="./img/rosrestr.png" alt="rosrestr">
+          <div class="content__text-container">
+            <h3 class="content__caption content__caption-mob">Услуги Росреестра</h3>
+            <p class="content__text">В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик,
+              указанный при подаче запроса в Росреестре. </p>
+            <p class="content__highlighting">Нет кода?</p>
+            <p class="content__text">Если у вас еще нет кода платежа, перейдите на сайт <a href="http://"
+                rosreestr.ru>rosreestr.ru </a> и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <article class="partners">
+      <h2 class="article__caption partners__caption">С нами работают</h2>
+      <div class="partners__container">
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_1.svg" alt="logo_partner_1">
+          <p class="partner__name">Партнер 1</p>
+        </div>
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_2.svg" alt="logo_partner_1">
+          <p class="partner__name">Компания-партнер с длинным названием</p>
+        </div>
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_3.svg" alt="logo_partner_1">
+          <p class="partner__name">Партнер 3</p>
+        </div>
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_4.svg" alt="logo_partner_1">
+          <p class="partner__name">Название партнера 4</p>
+        </div>
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_5.svg" alt="logo_partner_1">
+          <p class="partner__name">Компания-партнер 5</p>
+        </div>
+        <div class="partner">
+          <img class="partner__img" src="./img/partner_6.svg" alt="logo_partner_1">
+          <p class="partner__name">Партнер 6 с длинным названием</p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer__copiright footer__text">© 2012–2018 <span class="footer__text-br">ООО «Название компании»</span>
+    </p>
+    <a href="#"> <img class="footer__more" src="./img/more.svg" alt="more"></a>
+    <nav class="footer__footer-nav">
+      <ul class="footer-nav">
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text"> О сервисе</li>
+        </a>
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text"> Способы оплаты</li>
+        </a>
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text"> Как это работает</li>
+        </a>
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text">Партнёрам</li>
+        </a>
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text">Статьи и новости</li>
+        </a>
+      </ul>
+      <ul class="footer__footer-nav footer-nav">
+
+        <li class="footer-nav__text ">
+          <a class="footer-nav__link footer-nav-tel" href="#">8 800 123 4567</a>
+          <p class="footer__text-br footer-nav__br">Звонок по России бесплатный</p>
+        </li>
+
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text"> Обратная связь</li>
+        </a>
+        <a class="footer-nav__link" href="#">
+          <li class="footer-nav__text">Мы вКонтакте</li>
+        </a>
+      </ul>
+    </nav>
+    <p class="footer__additional footer__text">Дополнительные ссылки <span class="footer__text-br">и копирайты ООО
+        «Фирма 2»</span>
+      <img class="footer__img-company" src="./img/firma2.svg" alt="firma2">
+    </p>
+    <img class="footer__secure-img" src="./img/secure.png" alt="">
+  </footer>
+
+</body>
+
+</html>
