@@ -36,7 +36,6 @@
       </a>
     </ul>
   </header>
-
   <main class="main">
     <div class="main__search search">
       <h2 class="search__caption">
@@ -239,7 +238,19 @@
     </p>
     <img class="footer__secure-img" src="./img/secure.png" alt="">
   </footer>
-
+  <div class="enter-window" >
+    <p class="enter-window__caption">Введите логин и пароль для входа <br> в Личный кабинет</p>
+    <form>
+      <input class="enter-window__input enter-window__text" type="text" name="login" placeholder="Логин" required>
+      <input class="enter-window__input enter-window__text" type="password" name="password" placeholder="Пароль" required>
+      <button class="enter-window__input enter-window__enter" type="submit">Войти</button>
+      <a class="enter-window__link" href="#">Забыли пароль?</a> <br>
+      <a class="enter-window__link" href="#">Регистрация</a>
+    </form>
+    <button type="button" class="enter-window__cancel-btn">
+    </button>
+  </div>
+<div class="overlay"></div>
 </body>
 
 </html>

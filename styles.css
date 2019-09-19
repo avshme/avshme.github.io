@@ -87,6 +87,7 @@ body {
     align-content: center;
     justify-content: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .main {
@@ -110,7 +111,7 @@ body {
     font-style: 400;
 }
 
-.search__form{
+.search__form {
     width: 100%;
     text-align: center;
 }
@@ -256,6 +257,77 @@ body {
     display: none;
 }
 
+.enter-window {
+    z-index: 3;
+    position: fixed;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 402px;
+    height: 477px;
+    padding: 20px 37px;
+    display: none;
+}
+
+.enter-window__caption {
+    padding-left: 3px;
+}
+
+.enter-window__input {
+    width: 324px;
+    height: 60px;
+    margin-top: 19px;
+}
+
+.enter-window__text {
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    padding-left: 19px;
+    font-size: 1.25em;
+}
+
+.enter-window__enter {
+    background-color: var(--red);
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 9px;
+}
+
+.enter-window__link {
+    display: inline-block;
+    margin: 27px 3px 0;
+    border-bottom: 2px dotted var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.enter-window__cancel-btn {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: initial;
+    background: url(./img/close-enter.svg) no-repeat;
+    background-size: cover;
+    border: none;
+    top: 4px;
+    right: -43px;
+}
+
+.overlay {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
 @media all and (min-width: 1000px) {
     .header {
         display: flex;
@@ -282,14 +354,15 @@ body {
         margin: 0;
     }
 
-    .menu, .menu:focus {
+    .menu,
+    .menu:focus {
         background: none;
     }
 
     .menu-nav {
         top: 65px;
     }
-    
+
     .help-caption {
         display: block;
         font-size: 1.2em;
@@ -381,7 +454,8 @@ body {
         margin: 0 auto;
     }
 
-    .payment-nav:last-child>.payment-nav__item, .payment-section:first-of-type {
+    .payment-nav:last-child>.payment-nav__item,
+    .payment-section:first-of-type {
         border: none;
     }
 
@@ -482,7 +556,7 @@ body {
     }
 
     .content__img,
-    .footer__text-br,  
+    .footer__text-br,
     .footer__footer-nav {
         display: block;
     }
