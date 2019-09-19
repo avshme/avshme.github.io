@@ -364,9 +364,9 @@ body {
         top: 75px;
         right: 10px;
         width: 240px;
-        -webkit-box-shadow: -1px -1px 7px 0px rgba(0,0,0,0.6);
-        -moz-box-shadow: -1px -1px 7px 0px rgba(0,0,0,0.6);
-        box-shadow: -1px -1px 7px 0px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
     }
 
     .menu-nav::after {
