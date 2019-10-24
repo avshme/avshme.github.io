@@ -40,11 +40,13 @@ body {
     background-image: url(./img/menu_icon.svg);
     background-color: unset;
     border: none;
+    outline: none;
     transition: 0.2s;
 }
 
 .menu:focus {
     background: url(./img/close.svg) no-repeat;
+    background-size: cover;
 }
 
 .menu-nav {

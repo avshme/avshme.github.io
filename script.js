@@ -1,20 +1,20 @@
 $(document).ready(function () {
+  var all = $('.content');
   $(window).on('resize', function () {
-    var all = $('.content');
     if ($(window).width() < 1000) {
       all.hide();
       $('.name').show();
-      $('.name').click(function () {
-        all.slideUp();
-        $(this).find('.name__open').toggleClass("up");
-        $(this).siblings().slideDown();
-        return false;
-      });
     } else {
       all.show();
       $('.name').hide();
     }
   }).resize();
+  $('.name').click(function () {
+    all.slideUp();
+    $(this).find('.name__open').toggleClass("up");
+    $(this).siblings().slideDown();
+    return false;
+  });
   var overlay = $('.overlay');
   var openModal = $('.header__enter-mob');
   var close = $('.enter-window__cancel-btn, .overlay');
@@ -26,7 +26,7 @@ $(document).ready(function () {
     });
   });
   close.click(function () {
-      modal // все мoдaльные oкнa
+      modal
         .fadeOut( 150,
           function () {
             modal.css('display', 'none');
@@ -34,6 +34,5 @@ $(document).ready(function () {
             overlay.css('display', 'none');
           });
     }
-
   );
 });
